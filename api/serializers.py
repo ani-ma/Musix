@@ -3,4 +3,4 @@ from .models import Room
 class RoomSerializer(serializers.ModelSerializer):
     class Meta:
         model = Room
-        fields = ('id','code','host','guest_can_pause','vote_to_skip','created_at') #id is automatically created when creating a model, check models.py for reference
+        fields = ('id','code','host','guest_can_pause','votes_to_skip','created_at') #id is automatically created when creating a model, check models.py for reference

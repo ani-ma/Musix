@@ -19,6 +19,6 @@ from django.urls import path,include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("",include("api.urls")), # All unmentioned urls get sent to api.urls """
+    path("api/",include("api.urls")), # All unmentioned urls get sent to api.urls """
 ]#whatever is entered at line 22 the corresponding path will get updated eg: if instead of "" there's 'app/' the updated path will be domain/app/about
 # Default place for storing urls like | domain_name/about |"""
